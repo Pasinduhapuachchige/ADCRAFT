@@ -1,0 +1,150 @@
+/*works*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0%;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .work {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .work img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .work-details {
+    padding: 15px;
+  }
+  
+  .work-details h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .work-details p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the container */
+.work-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the photo */
+.photo {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the description */
+.description {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Navigation styles */
+nav{
+  display: flex;
+  justify-content:space-between;
+  padding: 32px 0;
+  text-decoration: none;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  font-size: 18px;
+}
+.nav-links {
+  margin-left: auto;
+}
+
+/* Footer section styles */
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
+  
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  text-decoration: none;
+}
+
+
+footer .logo{
+  color: var(--primary-dark);
+}
+
+/* Anchor tag styles */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo{
+  margin-right: auto;
+}
+
+/* Container styles */
+.container, .container1{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 8px;
+}

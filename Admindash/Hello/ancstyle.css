@@ -1,0 +1,184 @@
+/* Reset default browser styles */
+/* Styles for the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Styles for table header cells */
+.table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Styles for table data cells */
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+/* Alternate row background color */
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+  .table {
+    overflow-x: auto;
+  }
+
+  .table th, .table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+}
+
+
+
+
+  .make {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+  
+  .make a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .make:hover {
+    background-color: #45a049;
+  }
+
+  .update {
+    background-color: #3498db; /* Blue color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px; /* Add spacing between buttons */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .update:hover {
+    background-color: #2980b9; /* Darker shade of blue on hover */
+  }
+  
+  /* Delete button */
+  .delete {
+    background-color: #e74c3c; /* Red color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .delete:hover {
+    background-color: #c0392b; /* Darker shade of red on hover */
+  }
+
+
+  .create {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styles for form labels */
+  .create label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles for form input fields */
+  .create input[type="text"],
+  .create textarea,
+  .create input[type="date"],
+  .create input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+  }
+  
+  /* Styles for form textarea */
+  .create textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Styles for form submit button */
+  .create input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styles for form submit button on hover */
+  .create input[type="submit"]:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+  }
+
+  .createform 
+  {
+    font-size: 24px; /* Font size */
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Margin at the bottom */
+    text-align: center; /* Center-align text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bold; /* Make text bold */
+    letter-spacing: 2px; /* Adjust letter spacing */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Add text shadow */
+    border-bottom: 2px solid #555; /* Add bottom border */
+    padding-bottom: 10px; /* Pad */
+    
+  }

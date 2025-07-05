@@ -1,0 +1,394 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Define root variables for color scheme */
+:root {
+  --primary-light: #4aa8a3;
+  --primary-dark: #04555b;
+  --black: #000000;
+  --white: #efefef;
+}
+
+/* Resetting default margin, padding, and box-sizing */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body{
+  font-family: "Jost", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Anchor tag styles */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header section styles */
+#header, #header-login, #header-service{
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center;
+  background-size:cover ;
+}
+
+/* Navigation styles */
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  font-size: 18px;
+}
+
+/* Header content styles */
+.header-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap: 16px;
+  margin-top: 60px;
+}
+
+/* Primary button styles */
+.primary-btn{
+  padding: 10px 24px;
+  background-color: var(--primary-light);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.primary-btn:hover{
+  background-color: var(--primary-dark);
+}
+
+/* Menu button styles */
+.menu-btn{
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: var(--primary-light);
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: none;
+}
+
+/* Services section styles */
+#services{
+  display: flex;
+  margin-top: 120px;
+  gap: 50px;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.service{
+  width: 300px;
+}
+
+.service p{
+  color: gray;
+}
+
+.service img{
+  max-width: 100%;
+}
+
+/* About section styles */
+#about{
+  display: flex;
+  margin-top: 120px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-content{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h1{
+  font-size: 32px;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
+
+#about img{
+  max-width: 100%;
+}
+
+/* Talk to Us section styles */
+#talk-to-us{
+  background-image: url('./img/jess-bailey-q10VITrVYUM-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  margin-top: 120px;
+}
+
+.talk-to-us-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.talk-to-us-content h1{
+  color: var(--primary-dark);
+}
+
+.talk-to-us-content p{
+  max-width: 500px;
+}
+
+/* Footer section styles */
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+footer .logo{
+  color: var(--primary-dark);
+}
+
+/* Contact page styles */
+#contact-header{
+  min-height: 400px;
+  background-image: url('/img/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#contact-us{
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto;
+  gap: 60px;
+}
+
+form{
+  flex-basis: 50%;
+}
+
+.inputWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.inputWrapper input{
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid var(--primary-dark);
+  outline: none;
+}
+
+.address{
+  flex-basis: 50%;
+}
+
+.detailsWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 60px;
+}
+
+.detail{
+  display: flex;
+  gap: 10px;
+}
+
+.detail img{
+  width: 40px;
+  height: 40px;
+}
+
+.detail h6{
+  color: gray;
+}
+
+.followUsWrapper{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.socialLinks{
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin-top: 16px;
+}
+
+/* Container styles */
+.container, .container1{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 8px;
+}
+
+/* Form container styles */
+.form-container{
+  max-width: 540px;
+  max-height: 340px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(2, 71, 84, 0.1);
+  justify-content: center;
+}
+
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+}
+
+.form-container h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container input{
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button{
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover{
+  background-color: #087a9a;
+}
+
+.message{
+  text-align: center;
+}
+
+.message a{
+  color: #15c4c4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.message a:hover{
+  color: #10c9c3;
+}
+
+/* Signup form styles */
+.signup-form{
+  display: none;
+}
+
+.signup-form.show{
+  display: block;
+  animation: slide-right 0.5s ease forwards;
+}
+
+/* Animation keyframes */
+@keyframes slide-left {
+  from {
+      transform: translateX(400px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+      transform: translateX(-400px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width:520px){
+  .header-content h1{
+    font-size: 32px;
+  }
+  .header-content p{
+    font-size: 24px;
+  }
+  .menu-btn{
+    display: block;
+  }
+  nav{
+    padding: 16px;
+  }
+  nav ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 80%;
+    height: 100%;
+    align-items:end ;
+    padding-top: 80px;
+    margin-right: -900px;
+    transition: all 0.3s ease;
+  }
+  nav ul.active{
+    margin-right: 0;
+  }
+  nav ul li{
+    border-bottom:1px solid var(--primary-dark) ;
+    width: 100%;
+    padding: 16px;
+    text-align: right;
+  }
+  footer{
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+  }
+  #contact-us{
+    flex-direction: column;
+  }
+  .inputWrapper{
+    margin-left: 0;
+  }
+}
